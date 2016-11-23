@@ -28,14 +28,16 @@ body {
  margin: 0;
  padding: 0;
  list-style: none;
-	border-bottom: 1px dashed #999;
+	border-left: 1px dashed #999999;
+	overflow: hidden;
+ zoom: 1; /* for IE 6 */
 }
 	#mainNav a {
  color: #000;
  font-size: 11px;
  text-transform: uppercase;
  text-decoration: none;
-		border-bottom: none;
+		border-left: none;
  padding: 7px 5px 7px 30px;
 		display: block;
 		background-color: #E7E7E7;
@@ -51,15 +53,21 @@ body {
 }
 	#home #homeLink,
 #feature #featureLink,
-#expert #expertLink,
+#expert #experLink,
 #quiz #quizLink,
 #project #projectLink,
-#horoscope #horoscopeLink {
+#horoscope #horoscopeLink
+{
  background-color: #FFFFFF;
- background-position: 97% 100%;
+background-position: 3px 100%;
  padding-right: 15px;
  padding-left: 30px;
  font-weight: bold;
+}
+	
+	#mainNav li {
+ float: left;
+ width: 12em;
 }
 
 </style>
